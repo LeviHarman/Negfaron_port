@@ -25,3 +25,4 @@ class Weapon {
   void set_price(int a){ price = a; }
   void set_modifier(int a){ modifier = a; }
 };
+
