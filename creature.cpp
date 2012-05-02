@@ -20,4 +20,8 @@ class Creature {
   void set_creature_type(string a){ creature_type = a; }
   void set_hp( string a ){ hp = a; }
   void max_hp( string a ){ max_hp = a; }
+  
+  int alive?() {
+    hp > 0;
+  }
 };
