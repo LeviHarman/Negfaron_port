@@ -15,4 +15,9 @@ class Creature {
   string get_creature_type(){ return creature_type; }
   int get_hp(){ return hp; }
   int get_max_hp(){ return max_hp; }
+  
+  void set_name(string a){ name = a; }
+  void set_creature_type(string a){ creature_type = a; }
+  void set_hp( string a ){ hp = a; }
+  void max_hp( string a ){ max_hp = a; }
 };
