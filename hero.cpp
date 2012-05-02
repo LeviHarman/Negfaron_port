@@ -1,5 +1,10 @@
 class Hero: public Creature {
-  int str, int dex, int con, int inte, int wis, int cha;
+  int str;
+  int dex;
+  int con;
+  int inte;
+  int wis;
+  int cha;
   int level;
   int weapon;
   int gold;
