@@ -1,1 +1,5 @@
 Negfaron rewritten in c++
+
+
+Tested compilers:
+Will compile using GCC v4.4 and Microsoft visual studio command prompt (Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86)

@@ -5,7 +5,7 @@ using namespace std;
 #include "creature.cpp"
 #include "monster.cpp"
 #include "hero.cpp"
-#include "negfaron_methods.cpp"
+#include "public_methods.cpp"
 
 
 int main () {
@@ -28,6 +28,13 @@ int main () {
   
   Weapon wep;
   wep.set_values ("sword", 4, 1, 35, 0);
+  
+  Hero hero;
+  hero.set_values ("hero", "human", 0, 0);
+  hero.set_stats (1, 1, 1, 1, 1, 1);
+  hero.set_specific_values (1, 1, 1, 1, 1, 1);
+
+  
   int apple = new_stat_roll ();
   int pir = new_stat_roll ();
   int cat = new_stat_roll ();
