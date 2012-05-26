@@ -37,6 +37,13 @@ class Hero: public Creature {
   void set_wis(int a){ wis = a; }
   void set_cha(int a){ cha = a; }
   
+  int get_str(){ return(str); }
+  int get_dex(){ return(dex); }
+  int get_con(){ return(con); }
+  int get_inte(){ return(inte); }
+  int get_wis(){ return(wis); }
+  int get_cha(){ return(cha); }
+  
   void set_level(int a){ level = a; }
   void set_weapon(int a){ weapon = a; }
   void set_gold(int a){ gold = a; }
