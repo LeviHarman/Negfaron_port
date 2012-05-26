@@ -6,7 +6,7 @@ using namespace std;
 #include "creature.cpp"
 #include "monster.cpp"
 #include "hero.cpp"
-#include "public_methods.cpp"
+#include "neg_functions.cpp"
 
 
 int main () {
