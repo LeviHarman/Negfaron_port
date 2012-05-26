@@ -1,27 +1,31 @@
 class Creature {
   string name;
-  string creature_type;
+  string type;
   int hp;
   int max_hp;
   public:
-    void Creature::set_values (string new_name, string new_creature_type, int new_hp, int new_max_hp) {
+    //set_values: name,type,hp,max_hp
+    void Creature::set_values (string new_name, string new_type, int new_hp, int new_max_hp) {
       name = new_name;
-      creature_type = new_creature_type;
+      type = new_type;
       hp = new_hp;
       max_hp = new_max_hp;
     }
     
   string get_name(){ return name; }
-  string get_creature_type(){ return creature_type; }
+  string get_type(){ return type; }
   int get_hp(){ return hp; }
   int get_max_hp(){ return max_hp; }
   
   void set_name(string a){ name = a; }
-  void set_creature_type(string a){ creature_type = a; }
+  void set_type(string a){ type = a; }
   void set_hp( int a ){ hp = a; }
   void set_max_hp( int a ){ max_hp = a; }
   
-  int is_alive() {
-    hp > 0;
+  bool is_alive() {
+    if(hp > 0)
+    {
+      return true;
+    }
   }
 };
