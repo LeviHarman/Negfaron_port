@@ -8,6 +8,8 @@ using namespace std;
 #include "hero.cpp"
 #include "neg_functions.cpp"
 #include "char_gen.cpp"
+//Programmed by: Levi Harman
+//Last revision: 5/26/2012
 
 
 int main () {

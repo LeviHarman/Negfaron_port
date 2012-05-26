@@ -28,24 +28,6 @@ int new_stat_roll()
   return ( statrolls );
 }
 
-Hero new_hero_stats(Hero hero){
-  int r1 = new_stat_roll();
-  int r2 = new_stat_roll();
-  int r3 = new_stat_roll();
-  int r4 = new_stat_roll();
-  int r5 = new_stat_roll();
-  int r6 = new_stat_roll();
-  
-  hero.set_str(r1);
-  hero.set_dex(r2);
-  hero.set_con(r3);
-  hero.set_inte(r4);
-  hero.set_wis(r5);
-  hero.set_cha(r6);
-  
-  return(hero);
-}
-
 //prints name,race,str,dex,con,inte,wis,cha,hp,max_hp,gold,weapon,experience,exp_this_level,exp_to_next_level
 void hero_stats(Hero hero){
   cout << "Name: = " << hero.get_name() << endl;
@@ -63,5 +45,12 @@ void hero_stats(Hero hero){
   cout << "Total Xp: = "<<hero.get_experience()<<endl;
   cout << "XP this lvl: = "<<hero.get_exp_this_level()<<endl;
   cout << "XP to next lvl: = "<<hero.get_exp_to_next_level()<<endl;
+}
+
+//parameter:stat
+//return:stats modifier
+int get_mod(int stat){
+  int mod = (stat/2)-5;
+  return(mod);
 }
 

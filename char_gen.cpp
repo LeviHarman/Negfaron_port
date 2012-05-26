@@ -24,6 +24,8 @@ Hero prompt_name(Hero hero){
   return(hero);
 }
 
+//generates new str,dex,con,inte,wis,cha, and hp.
+//prompts user if he wants to roll again.
 Hero new_hero_stats(Hero hero){
   bool stat_check = true;
   char q;

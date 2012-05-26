@@ -1,16 +1,18 @@
 class Hero: public Creature {
-  int str;
-  int dex;
-  int con;
-  int inte;
-  int wis;
-  int cha;
+  //stats and mod values
+  int str,dex,con,inte,wis,cha;
+  int str_mod,dex_mod,con_mod,inte_mod,wis_mod,cha_mod;
+  
+  //specific values
   int level;
   Weapon weapon;
   int gold;
   int experience;
   int exp_this_level;
   int exp_to_next_level;
+  
+  
+  
   public:
     //set_stats:str,dex,con,inte,wis,cha
     void Hero::set_stats (int new_str, int new_dex, int new_con, int new_inte, int new_wis, int new_cha) {
@@ -37,6 +39,12 @@ class Hero: public Creature {
   void set_inte(int a){ inte = a; }
   void set_wis(int a){ wis = a; }
   void set_cha(int a){ cha = a; }
+  void set_str_mod(int a){ str_mod = a; }
+  void set_dex_mod(int a){ dex_mod = a; }
+  void set_con_mod(int a){ con_mod = a; }
+  void set_inte_mod(int a){ inte_mod = a; }
+  void set_wis_mod(int a){ wis_mod = a; }
+  void set_cha_mod(int a){ cha_mod = a; }
   
   void set_level(int a){ level = a; }
   void set_weapon(Weapon a){ weapon = a; }
@@ -51,6 +59,12 @@ class Hero: public Creature {
   int get_inte(){ return(inte); }
   int get_wis(){ return(wis); }
   int get_cha(){ return(cha); }
+  int get_str_mod(){ return(str_mod); }
+  int get_dex_mod(){ return(dex_mod); }
+  int get_con_mod(){ return(con_mod); }
+  int get_inte_mod(){ return(inte_mod); }
+  int get_wis_mod(){ return(wis_mod); }
+  int get_cha_mod(){ return(cha_mod); }
   
   int get_level(){ return(level); }
   Weapon get_weapon(){ return(weapon); }
@@ -58,5 +72,4 @@ class Hero: public Creature {
   int get_experience(){ return(experience); }
   int get_exp_this_level(){ return(exp_this_level); }
   int get_exp_to_next_level(){ return(exp_to_next_level); }
-
 };
