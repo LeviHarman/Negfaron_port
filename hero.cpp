@@ -6,7 +6,7 @@ class Hero: public Creature {
   int wis;
   int cha;
   int level;
-  int weapon;
+  Weapon weapon;
   int gold;
   int experience;
   int exp_this_level;
@@ -22,7 +22,7 @@ class Hero: public Creature {
       cha = new_cha;
     }
     //set_specific_values:level,weapon,gold,experience,exp_this_level,exp_to_next_level
-    void Hero::set_specific_values (int new_level, int new_weapon, int new_gold, int new_experience, int new_exp_this_level, int new_exp_to_next_level) {
+    void Hero::set_specific_values (int new_level, Weapon new_weapon, int new_gold, int new_experience, int new_exp_this_level, int new_exp_to_next_level) {
       level = new_level;
       weapon = new_weapon;
       gold = new_gold;
@@ -39,7 +39,7 @@ class Hero: public Creature {
   void set_cha(int a){ cha = a; }
   
   void set_level(int a){ level = a; }
-  void set_weapon(int a){ weapon = a; }
+  void set_weapon(Weapon a){ weapon = a; }
   void set_gold(int a){ gold = a; }
   void set_experience(int a){ experience = a; }
   void set_exp_this_level(int a){ exp_this_level = a; }
@@ -53,7 +53,7 @@ class Hero: public Creature {
   int get_cha(){ return(cha); }
   
   int get_level(){ return(level); }
-  int get_weapon(){ return(weapon); }
+  Weapon get_weapon(){ return(weapon); }
   int get_gold(){ return(gold); }
   int get_experience(){ return(experience); }
   int get_exp_this_level(){ return(exp_this_level); }
