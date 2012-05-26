@@ -1,5 +1,6 @@
 #include <iostream>
 #include <time.h>
+#include <string>
 using namespace std;
 #include "weapon.cpp"
 #include "creature.cpp"
@@ -32,18 +33,9 @@ int main () {
   Hero hero;
   hero.set_values ("hero", "human", 0, 0);
   hero.set_stats (1, 1, 1, 1, 1, 1);
-  hero.set_specific_values (1, 1, 1, 1, 1, 1);
-
-  
-  int apple = new_stat_roll ();
-  int pir = new_stat_roll ();
-  int cat = new_stat_roll ();
-  int bandanna = new_stat_roll ();
-  
-  cout << apple << "\n";
-  cout << pir << "\n";
-  cout << cat << "\n";
-  cout << bandanna << "\n";
+  hero.set_specific_values (1, wep, 1, 1, 1, 1);
+  hero = new_hero_stats(hero);
+  hero_stats(hero);
   
   return 0;
 }
