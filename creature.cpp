@@ -27,5 +27,9 @@ class Creature {
     {
       return true;
     }
+    else if(hp<=0)
+    {
+      return false;
+    }
   }
 };
