@@ -53,7 +53,7 @@ Hero new_hero_stats(Hero hero){
     cout<<"Intelligence: "<<r4<<", modifier: "<<m4<<" - Magic."<<endl;
     cout<<"Wisdom:       "<<r5<<", modifier: "<<m5<<" - Healing."<<endl;
     cout<<"Charisma:     "<<r6<<", modifier: "<<m6<<" - Prices and dealing with people."<<endl;
-    cout<<"Hitpoints:    "<<(10+m3)<<"                   - How much damage you can take."<<endl;
+    cout<<"Hitpoints:    "<<(10+m3)<<"              - How much damage you can take."<<endl;
     cout<<endl;
     
     cout<<"Do you want to roll again? 'y/n'";
@@ -79,8 +79,8 @@ Hero new_hero_stats(Hero hero){
   hero.set_wis_mod(m5);
   hero.set_cha_mod(m6);
   
-  hero.set_max_hp(10+m6);
-  hero.set_hp(10+m6);
+  hero.set_max_hp(10+m3);
+  hero.set_hp(10+m3);
   
   
   return(hero);

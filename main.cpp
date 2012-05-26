@@ -42,6 +42,7 @@ int main () {
   
   
   hero = new_hero_stats(hero);
+  hero_stats(hero);
   
   return 0;
 }
