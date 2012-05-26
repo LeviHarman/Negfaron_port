@@ -46,7 +46,7 @@ Hero new_hero_stats(Hero hero){
   return(hero);
 }
 
-//supposed to write hero stats to the console.
+//prints name,race,str,dex,con,inte,wis,cha,hp,max_hp,gold,weapon,experience,exp_this_level,exp_to_next_level
 void hero_stats(Hero hero){
   cout << "Name: = " << hero.get_name() << endl;
   cout << "Race: = "<<hero.get_type()<<endl;
