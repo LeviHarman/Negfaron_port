@@ -82,7 +82,49 @@ Hero new_hero_stats(Hero hero){
   hero.set_max_hp(10+m3);
   hero.set_hp(10+m3);
   
+  return(hero);
+}
+
+Hero pick_race(Hero hero)
+{
+  bool race_check = true;
   
+  while(race_check==true)
+  {
+    cout<<"Pick a race."<<endl;
+    cout<<"Human - +0    , +0     The well rounded race."<<endl;
+    cout<<"Dwarf - +2 Con, -2 Cha A short and sturdy race."<<endl;
+    cout<<"Elf   - +2 Dex, -2 Con A frail race. "<<endl;
+    
+    string race;
+    cin>>race;
+    
+    if (race=="Human"){
+    
+      hero.set_type("Human");
+      race_check=false;
+    }
+    else if(race=="Dwarf"){
+      hero.set_type("Dwarf");
+      int con=hero.get_con();
+      hero.set_con(con+2);  
+      int cha=hero.get_cha();
+      hero.set_cha(cha-2);
+      race_check=false;
+    }
+    else if(race=="Elf"){
+      hero.set_type("Elf");
+      int con=hero.get_con();
+      hero.set_con(con-2);
+      int dex=hero.get_dex();
+      hero.set_dex(dex-2);
+      race_check=false;
+    }
+    else if(race_check==true)
+    {
+      cout<<"Please enter a valid race. Make sure you capitalize the race name ex: Human not human"<<endl;
+    }
+  }
   return(hero);
 }
 
