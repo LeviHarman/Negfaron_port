@@ -47,21 +47,21 @@ Hero new_hero_stats(Hero hero){
 }
 
 //supposed to write hero stats to the console.
-int hero_stats(Hero hero){
- // cout << "Name: = "<<hero.name;
-//  cout << "Race: = "<<hero.creature_type;
+void hero_stats(Hero hero){
+  cout << "Name: = " << hero.get_name() << endl;
+  cout << "Race: = "<<hero.get_type()<<endl;
   cout << "Strength: = "<<hero.get_str()<<endl;
   cout << "Dexterity: = "<<hero.get_dex()<<endl;
   cout << "Constitution: = "<<hero.get_con()<<endl;
   cout << "Intelligence: = "<<hero.get_inte()<<endl;
   cout << "Wisdom: = "<<hero.get_wis()<<endl;
   cout << "Charisma: = "<<hero.get_cha()<<endl;
- // cout << "Hitpoints: = "<<hero.hp;
- // cout << "Gold: = "<<hero.gold;
-// cout << "Weapon: = "<<hero.weapon.name;
-//  cout << "Total Xp: = "<<hero.experience;
-//  cout << "XP this lvl: = "<<hero.exp_this_level;
-//  cout << "XP to next lvl: = "<<hero.exp_to_next_level;
-  
-  return 0;
+  cout << "Hitpoints: = "<<hero.get_hp()<<endl;
+  cout << "Total HP: = "<<hero.get_max_hp()<<endl;
+  cout << "Gold: = "<<hero.get_gold()<<endl;
+  cout << "Weapon: = "<<hero.get_weapon().get_name()<<endl;
+  cout << "Total Xp: = "<<hero.get_experience()<<endl;
+  cout << "XP this lvl: = "<<hero.get_exp_this_level()<<endl;
+  cout << "XP to next lvl: = "<<hero.get_exp_to_next_level()<<endl;
 }
+
