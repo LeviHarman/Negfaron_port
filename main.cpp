@@ -39,9 +39,8 @@ int main () {
   hero.set_specific_values (1, wep, 1, 1, 1, 1);
   
   hero = prompt_name(hero);
-  
-  
   hero = new_hero_stats(hero);
+  hero = pick_race(hero);
   hero_stats(hero);
   
   return 0;
