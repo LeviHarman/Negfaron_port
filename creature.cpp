@@ -5,7 +5,7 @@ class Creature {
   int max_hp;
   public:
     //set_values: name,type,hp,max_hp
-    void Creature::set_values (string new_name, string new_type, int new_hp, int new_max_hp) {
+    void set_values (string new_name, string new_type, int new_hp, int new_max_hp) {
       name = new_name;
       type = new_type;
       hp = new_hp;

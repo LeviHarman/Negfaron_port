@@ -1,5 +1,6 @@
 #include <iostream>
 #include <time.h>
+#include <stdlib.h>
 #include <string>
 using namespace std;
 #include "weapon.cpp"
@@ -14,7 +15,7 @@ using namespace std;
 
 int main () {
 
-  srand ( time(NULL) );
+  srand(time(NULL));
   
   cout << "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n";
   cout << "Welcome to....                                           @\n";

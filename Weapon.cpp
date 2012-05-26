@@ -5,7 +5,7 @@ class Weapon {
   int price;
   int modifier;
   public:
-    void Weapon::set_values (string new_name, int new_hit_die, int new_number_rolls, int new_price, int new_modifier) {
+    void set_values (string new_name, int new_hit_die, int new_number_rolls, int new_price, int new_modifier) {
       name = new_name;
       hit_die = new_hit_die;
       number_rolls = new_number_rolls;

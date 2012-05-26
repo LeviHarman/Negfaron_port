@@ -15,7 +15,7 @@ class Hero: public Creature {
   
   public:
     //set_stats:str,dex,con,inte,wis,cha
-    void Hero::set_stats (int new_str, int new_dex, int new_con, int new_inte, int new_wis, int new_cha) {
+    void set_stats (int new_str, int new_dex, int new_con, int new_inte, int new_wis, int new_cha) {
       str = new_str;
       dex = new_dex;
       con = new_con;
@@ -24,7 +24,7 @@ class Hero: public Creature {
       cha = new_cha;
     }
     //set_specific_values:level,weapon,gold,experience,exp_this_level,exp_to_next_level
-    void Hero::set_specific_values (int new_level, Weapon new_weapon, int new_gold, int new_experience, int new_exp_this_level, int new_exp_to_next_level) {
+    void set_specific_values (int new_level, Weapon new_weapon, int new_gold, int new_experience, int new_exp_this_level, int new_exp_to_next_level) {
       level = new_level;
       weapon = new_weapon;
       gold = new_gold;
