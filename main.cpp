@@ -7,6 +7,7 @@ using namespace std;
 #include "monster.cpp"
 #include "hero.cpp"
 #include "neg_functions.cpp"
+#include "char_gen.cpp"
 
 
 int main () {
@@ -34,8 +35,11 @@ int main () {
   hero.set_values ("hero", "human", 0, 0);
   hero.set_stats (1, 1, 1, 1, 1, 1);
   hero.set_specific_values (1, wep, 1, 1, 1, 1);
+  
+  hero = prompt_name(hero);
+  
+  
   hero = new_hero_stats(hero);
-  hero_stats(hero);
   
   return 0;
 }
