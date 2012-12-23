@@ -16,8 +16,8 @@ Hero prompt_name(Hero hero){
     cin>>q;
     
     if(q=='y'){
-      hero.set_name(name);
-      cout<<"Welcome "<<name<<", to the land of Negfaron!";
+      hero.name = name;
+      cout<<"Welcome "<<hero.name<<", to the land of Negfaron!";
       name_check=false;
     }
   }
@@ -65,22 +65,22 @@ Hero new_hero_stats(Hero hero){
     }
   }
   
-  hero.set_str(r1);
-  hero.set_dex(r2);
-  hero.set_con(r3);
-  hero.set_inte(r4);
-  hero.set_wis(r5);
-  hero.set_cha(r6);
+  hero.str = r1;
+  hero.dex = r2;
+  hero.con = r3;
+  hero.inte = r4;
+  hero.wis = r5;
+  hero.cha = r6;
   
-  hero.set_str_mod(m1);
-  hero.set_dex_mod(m2);
-  hero.set_con_mod(m3);
-  hero.set_inte_mod(m4);
-  hero.set_wis_mod(m5);
-  hero.set_cha_mod(m6);
+  hero.str_mod = m1;
+  hero.dex_mod = m2;
+  hero.con_mod = m3;
+  hero.inte_mod = m4;
+  hero.wis_mod = m5;
+  hero.cha_mod = m6;
   
-  hero.set_max_hp(10+m3);
-  hero.set_hp(10+m3);
+  hero.max_hp = 10+m3;
+  hero.hp = 10+m3;
   
   return(hero);
 }
@@ -101,23 +101,19 @@ Hero pick_race(Hero hero)
     
     if (race=="Human"){
     
-      hero.set_type("Human");
+      hero.type="Human";
       race_check=false;
     }
     else if(race=="Dwarf"){
-      hero.set_type("Dwarf");
-      int con=hero.get_con();
-      hero.set_con(con+2);  
-      int cha=hero.get_cha();
-      hero.set_cha(cha-2);
+      hero.type = "Dwarf";
+      hero.con+=2;  
+      hero.cha-=2;
       race_check=false;
     }
     else if(race=="Elf"){
-      hero.set_type("Elf");
-      int con=hero.get_con();
-      hero.set_con(con-2);
-      int dex=hero.get_dex();
-      hero.set_dex(dex-2);
+      hero.type="Elf";
+      hero.con-=2;
+      hero.dex-=2;
       race_check=false;
     }
     else if(race_check==true)

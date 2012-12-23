@@ -30,21 +30,21 @@ int new_stat_roll()
 
 //prints name,race,str,dex,con,inte,wis,cha,hp,max_hp,gold,weapon,experience,exp_this_level,exp_to_next_level
 void hero_stats(Hero hero){
-  cout << "Name: = " << hero.get_name() << endl;
-  cout << "Race: = "<<hero.get_type()<<endl;
-  cout << "Strength: = "<<hero.get_str()<<endl;
-  cout << "Dexterity: = "<<hero.get_dex()<<endl;
-  cout << "Constitution: = "<<hero.get_con()<<endl;
-  cout << "Intelligence: = "<<hero.get_inte()<<endl;
-  cout << "Wisdom: = "<<hero.get_wis()<<endl;
-  cout << "Charisma: = "<<hero.get_cha()<<endl;
-  cout << "Hitpoints: = "<<hero.get_hp()<<endl;
-  cout << "Total HP: = "<<hero.get_max_hp()<<endl;
-  cout << "Gold: = "<<hero.get_gold()<<endl;
-  cout << "Weapon: = "<<hero.get_weapon().get_name()<<endl;
-  cout << "Total Xp: = "<<hero.get_experience()<<endl;
-  cout << "XP this lvl: = "<<hero.get_exp_this_level()<<endl;
-  cout << "XP to next lvl: = "<<hero.get_exp_to_next_level()<<endl;
+	cout << "Name: = " << hero.name<< endl;
+	cout << "Race: = "<<hero.type<<endl;
+	cout << "Strength: = "<<hero.str<<endl;
+	cout << "Dexterity: = "<<hero.dex<<endl;
+	cout << "Constitution: = "<<hero.con<<endl;
+	cout << "Intelligence: = "<<hero.inte<<endl;
+	cout << "Wisdom: = "<<hero.wis<<endl;
+	cout << "Charisma: = "<<hero.cha<<endl;
+	cout << "Hitpoints: = "<<hero.hp<<endl;
+	cout << "Total HP: = "<<hero.max_hp<<endl;
+	cout << "Gold: = "<<hero.gold<<endl;
+	cout << "Weapon: = "<<hero.weapon.name<<endl;
+	cout << "Total Xp: = "<<hero.experience<<endl;
+	cout << "XP this lvl: = "<<hero.exp_this_level<<endl;
+	cout << "XP to next lvl: = "<<hero.exp_to_next_level<<endl;
 }
 
 //parameter:stat
